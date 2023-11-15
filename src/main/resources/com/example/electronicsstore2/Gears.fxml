@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electronicsstore2.GearsControl">
+   <children>
+      <ImageView fx:id="selectedimg" fitHeight="362.0" fitWidth="362.0" layoutX="110.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="362.0" fitWidth="362.0" layoutX="100.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane prefHeight="601.0" prefWidth="100.0" style="-fx-background-color: #fffb00;">
+         <children>
+            <Button fx:id="Logout" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #077750;" text="LogOut" />
+            <ImageView fitHeight="97.0" fitWidth="144.0" layoutX="3.0" layoutY="503.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/download-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <VBox layoutY="93.0" prefHeight="392.0" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#m" style="-fx-background-color: #fffb00;" text="Mobile">
+                     <VBox.margin>
+                        <Insets bottom="40.0" left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#la" style="-fx-background-color: #fffb00;" text="Laptop">
+                     <VBox.margin>
+                        <Insets bottom="40.0" left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#app" style="-fx-background-color: #fffb00;" text="Appliances">
+                     <VBox.margin>
+                        <Insets bottom="40.0" left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Acc" style="-fx-background-color: #fffb00;" text="Accessories">
+                     <VBox.margin>
+                        <Insets bottom="40.0" left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #ff0055;" text="Gears">
+                     <VBox.margin>
+                        <Insets bottom="40.0" left="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="img1" fitHeight="112.0" fitWidth="138.0" layoutX="237.0" layoutY="24.0" onMouseClicked="#CA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/WhatsApp_Image_2022-06-05_at_7.03.51_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label1" layoutX="381.0" layoutY="72.0" onMouseClicked="#CA" text="Label1" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img2" fitHeight="111.0" fitWidth="138.0" layoutX="233.0" layoutY="170.0" onMouseClicked="#CA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/WhatsApp_Image_2022-06-05_at_7.04.05_PM__1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label2" layoutX="381.0" layoutY="228.0" onMouseClicked="#CA" text="Label1" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img3" fitHeight="122.0" fitWidth="124.0" layoutX="537.0" layoutY="14.0" onMouseClicked="#CA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/WhatsApp_Image_2022-06-05_at_7.03.52_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label3" layoutX="682.0" layoutY="67.0" onMouseClicked="#CA" text="Label1" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img4" fitHeight="138.0" fitWidth="138.0" layoutX="541.0" layoutY="176.0" onMouseClicked="#CA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/WhatsApp_Image_2022-06-05_at_7.04.05_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label4" layoutX="682.0" layoutY="223.0" onMouseClicked="#CA" text="Label1" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="selectedlabel" layoutX="444.0" layoutY="85.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img5" fitHeight="130.0" fitWidth="121.0" layoutX="237.0" layoutY="329.0" onMouseClicked="#CA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/WhatsApp_Image_2022-06-05_at_7.04.21_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label5" layoutX="381.0" layoutY="374.0" onMouseClicked="#CA" text="Label1" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img6" fitHeight="97.0" fitWidth="138.0" layoutX="228.0" layoutY="477.0" onMouseClicked="#CA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/WhatsApp_Image_2022-06-05_at_7.04.33_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label6" layoutX="381.0" layoutY="521.0" onMouseClicked="#CA" text="Label1" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img8" fitHeight="109.0" fitWidth="138.0" layoutX="528.0" layoutY="325.0" onMouseClicked="#CA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/WhatsApp_Image_2022-06-05_at_7.04.22_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label8" layoutX="682.0" layoutY="369.0" onMouseClicked="#CA" text="Label1" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img7" fitHeight="144.0" fitWidth="164.0" layoutX="538.0" layoutY="451.0" onMouseClicked="#CA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/WhatsApp_Image_2022-06-05_at_7.04.34_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label7" layoutX="682.0" layoutY="516.0" onMouseClicked="#CA" text="Label1" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

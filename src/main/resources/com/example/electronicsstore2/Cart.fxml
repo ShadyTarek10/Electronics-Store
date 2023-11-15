@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="97.0" prefWidth="222.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electronicsstore2.CartControl">
+   <children>
+      <Button fx:id="a" layoutX="9.0" layoutY="58.0" mnemonicParsing="false" onAction="#addToCart" style="-fx-background-color: #fffb00;" text="Add" />
+      <Button fx:id="r" layoutX="67.0" layoutY="58.0" mnemonicParsing="false" onAction="#RemoveFromCart" style="-fx-background-color: #fffb00;" text="Remove" />
+      <Button fx:id="c" layoutX="143.0" layoutY="58.0" mnemonicParsing="false" onAction="#CheckOut" style="-fx-background-color: #fffb00;" text="Check Out" />
+      <TextField fx:id="order" layoutX="37.0" layoutY="14.0" />
+      <Label fx:id="l" layoutX="14.0" layoutY="18.0" text="Label" textFill="WHITE" />
+      <Button fx:id="bb" layoutX="153.0" layoutY="14.0" mnemonicParsing="false" onAction="#bck" style="-fx-background-color: #fffb00;" text="back" />
+   </children>
+</AnchorPane>

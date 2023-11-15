@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="851.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electronicsstore2.Afterlogin">
+   <left>
+      <AnchorPane prefHeight="186.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="117.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/download-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logoutbutton" layoutX="9.0" layoutY="613.0" mnemonicParsing="false" onAction="#userlogout" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: #f40fbf;" text="Logout">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <TextField fx:id="modell" layoutY="123.0" />
+            <TextField fx:id="brandd" layoutY="181.0" />
+            <TextField fx:id="pricee" layoutY="227.0" />
+            <TextField fx:id="warrantyy" layoutY="279.0" />
+            <Label layoutX="55.0" layoutY="95.0" prefHeight="18.0" prefWidth="42.0" text="Model" textFill="#05b2eb">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="156.0" text="Brand" textFill="#0b9cf7" />
+            <Label layoutX="61.0" layoutY="207.0" text="Price" textFill="#03c4ff" />
+            <Label layoutX="61.0" layoutY="253.0" text="warranty" textFill="#02a6dc" />
+            <Button fx:id="getdata" layoutX="84.0" layoutY="613.0" mnemonicParsing="false" onAction="#onGetData" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #f40fbf;" text="Get Data">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <TextField fx:id="screen" layoutX="5.0" layoutY="363.0" />
+            <TextField fx:id="ramm" layoutX="4.0" layoutY="407.0" />
+            <TextField fx:id="size" layoutX="5.0" layoutY="319.0" />
+            <TextField fx:id="hardd" layoutX="9.0" layoutY="451.0" />
+            <TextField fx:id="gpuuu" layoutX="9.0" layoutY="495.0" />
+            <TextField fx:id="color" layoutX="9.0" layoutY="580.0" />
+            <Label layoutX="72.0" layoutY="562.0" text="Color" textFill="#00ddff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="477.0" text="GPU" textFill="#00ddff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="433.0" text="Hard" textFill="#00ddff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="389.0" text="Ram" textFill="#00ddff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="345.0" text="Screen" textFill="#00ddff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="301.0" text="Size" textFill="#00ddff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cpuuu" layoutX="5.0" layoutY="538.0" />
+            <Label layoutX="72.0" layoutY="521.0" text="CPU" textFill="#00ddff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="625.0" prefWidth="666.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" layoutX="6.0" layoutY="14.0" prefHeight="364.0" prefWidth="680.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy></TableView>
+            <Button fx:id="ADD" layoutX="135.0" layoutY="393.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: fa00f5;" text="Add">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="remove" layoutX="259.0" layoutY="393.0" mnemonicParsing="false" onAction="#onRemove" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: fa00f5;" text="Remove">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="edit" layoutX="392.0" layoutY="393.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="31.0" prefWidth="73.0" style="-fx-background-color: fa00f5;" text="Edit">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Label fx:id="GetDataLabel" layoutX="19.0" layoutY="49.0" prefHeight="242.0" prefWidth="403.0" textFill="#fbff00">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="refresh" layoutX="38.0" layoutY="394.0" mnemonicParsing="false" onAction="#onRefresh" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: fa00f5;" text="Refresh">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
